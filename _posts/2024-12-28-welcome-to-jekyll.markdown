@@ -1,29 +1,18 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "ईशादि नौ उपनिषद"
 date:   2024-12-28 12:32:02 +0530
-categories: jekyll update
+categories: First Ring 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+`Relation`: In the Third ring it is told that the Supreme Brahma, the Supreme Lord, is present in all living benings, but is not visible to everyone. Only few can see with their subtle intellect. The question arises that when the Brahma is in our hearts, then why can't everyone see him with their intellect-like eyes? Why can only a few see him?
+On this it is said -
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+पराश्चि खानि व्यतृणत् स्वयंभू-
+स्तस्मात्पराङपश्यति नान्तरात्मन्।
+
+कश्चिद्धौरः प्रत्यगात्मानमैक्ष-
+दावृत्त चक्षुरमृतत्वमिच्छन
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
