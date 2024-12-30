@@ -1,60 +1,224 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700,300">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700,300">
 
-<style>
-.frame {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
-  background: #fff;
-  color: #333;
-}
+	<style>
+		.frame {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 400px;
+			height: 400px;
+			margin-top: -200px;
+			margin-left: -200px;
+			border-radius: 2px;
+			box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			background: #fff;
+			color: #333;
+		}
 
 
-.wrapper{
-	height:100vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-.square{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	border:1px solid black;
-	height:10rem;
-	width:10rem;
-	animation-name:a1;
-	animation-duration:3s;
-	animation-iteration-count:infinite;
-}
+		.wrapper {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-@keyframes a1{
-	100%{
-		transform:rotate(180deg);
-		height:2.5rem;
-		border-radius:50%;
-}
-}
-</style>
+		.square {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid black;
+			height: 16rem;
+			width: 16rem;
+			position: absolute;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+		#d1 {
+			animation-name: a1;
+		}
+
+		@keyframes a1 {
+			50% {
+				transform: rotate(180deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		@keyframes a2 {
+			50% {
+				transform: rotate(160deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d2 {
+			animation-name: a2;
+		}
+
+		@keyframes a3 {
+			50% {
+				transform: rotate(140deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d3 {
+			animation-name: a3;
+		}
+
+		@keyframes a4 {
+			50% {
+				transform: rotate(120deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d4 {
+			animation-name: a4;
+		}
+
+		@keyframes a5 {
+			50% {
+				transform: rotate(100deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d5 {
+			animation-name: a5;
+		}
+
+		@keyframes a6 {
+			50% {
+				transform: rotate(80deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d6 {
+			animation-name: a6;
+		}
+		@keyframes a7 {
+			50% {
+				transform: rotate(80deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d7 {
+			animation-name: a7;
+		}
+		@keyframes a8 {
+			50% {
+				transform: rotate(60deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d8 {
+			animation-name: a8;
+		}
+		@keyframes a9 {
+			50% {
+				transform: rotate(40deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d9 {
+			animation-name: a9;
+		}
+		@keyframes a10 {
+			50% {
+				transform: rotate(20deg);
+				height: 2.5rem;
+				border-radius: 50%;
+			}
+
+		}
+
+		#d10 {
+			animation-name: a10;
+		}
+	</style>
 </head>
+
 <body>
-<div class="frame">
-    <div class="center">
-          <div class="square"> hellow<div>
-    </div>
-  </div>
+	<div class="wrapper">
+		<div class="frame">
+			<div class="square" id="d1"> O</div>
+			<div class="square" id="d2"> O</div>
+			<div class="square" id="d3"> O</div>
+			<div class="square" id="d4"> O</div>
+			<div class="square" id="d5"> O</div>
+			<div class="square" id="d6"> O</div>
+			<div class="square" id="d7"> O</div>
+			<div class="square" id="d8"> O</div>
+			<div class="square" id="d9"> O</div>
+			<div class="square" id="d10"> O</div>
+		</div>
+	</div>
+	<script> // Select all div elements with the class 'square' 
+
+
+		// function changeKeyframeTransform(keyframePercentage, newTransformValue) {
+		// 	// Get all stylesheets
+		// 	const styleSheets = document.styleSheets;
+		// 	for (let i = 0; i < styleSheets.length; i++) {
+		// 		const cssRules = styleSheets[i].cssRules;
+		// 		for (let j = 0; j < cssRules.length; j++) {
+		// 			const rule = cssRules[j]; // Check if the rule is a keyframes rule
+		// 			if (rule.type === CSSRule.KEYFRAMES_RULE) {
+		// 				const keyframes = rule.cssRules;
+		// 				for (let k = 0; k < keyframes.length; k++) {
+		// 					const keyframe = keyframes[k]; // Check if the keyframe matches the specified percentage 
+
+		// 					keyframe.style.transform = newTransformValue;
+
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		
+		// function rotateDiv(){
+		// 	const squares = document.querySelectorAll('.square');  
+		// 	const squaresArray = Array.from(squares);
+		// 	const deg=180;
+		// 	squaresArray.forEach(element => {
+		// 		changeKeyframeTransform(`rotate(${deg}deg)`);
+		// 		deg=deg
+		// 	});
+		// }
+		
+	</script>
 </body>
