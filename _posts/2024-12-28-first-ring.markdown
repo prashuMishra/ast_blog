@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ईशादि नौ उपनिषद"
+title:  "First Ring"
 date:   2024-12-28 12:32:02 +0530
 categories: First Ring 
 ---
@@ -10,9 +10,11 @@ On this it is said -
 
 {% highlight ruby %}
 पराश्चि खानि व्यतृणत् स्वयंभू-
-स्तस्मात्पराङपश्यति नान्तरात्मन्।
+स्तस्मात्पराङपश्यति नान्तरात्मन् ।
 
 कश्चिद्धौरः प्रत्यगात्मानमैक्ष-
-दावृत्त चक्षुरमृतत्वमिच्छन
+दावृत्त चक्षुरमृतत्वमिच्छन ||
 {% endhighlight %}
+
+All these gross objects of the senses like sound, touch, form, taste and smell are outside. The senses have been created to give us true knowledge of this, Because without knowing these, man cannot know the nature and qualities of any subject.Nor can one perform new auspicious deeds by means of them, by accepting or renouncing them appropriately, to fulfil the purpose of God in the creation of the senses.
 
