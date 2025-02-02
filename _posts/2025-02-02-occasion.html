@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Day</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      color: #fff;
+      display: none;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .image-container {
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .image-container img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="inputContainer">
+  <label for="name">Enter Name: </label>
+    <input type="text" id="name">
+    <button onclick="checkOccasion()">Click Me</button>
+  </div>
+  <div id="message"  class="container">
+    <h1 id="msghdr">🎉 Happy Birthday Manisha! 🎉</h1>
+    <p >Wishing you a day filled with love, laughter, and happiness!</p>
+  </div>
+
+  <script>
+    const people = [
+  {name: 'Shashi', date: '31-jan', occasion: 'Anniversary'},
+  {name: 'Shashi', date: '02-feb', occasion: 'Anniversary'},
+  {name: 'Pari', date: '05-feb', occasion: 'Birthday'},
+  {name: 'Shaksham', date: '06-feb', occasion: 'Birthday'},
+  {name: 'Shashi', date: '05-dec', occasion: 'Birthday'},
+  {name: 'Manisha', date: '28-jan', occasion: 'Birthday'},
+];
+
+
+function checkOccasion() {
+  const nameInput = document.getElementById('name').value.trim().toLowerCase();
+  const currentDate = new Date();
+  const formattedDate = `${String(currentDate.getDate()).padStart(2, '0')}-${currentDate.toLocaleString('default', { month: 'short' }).toLowerCase()}`;
+
+  const person = people.find(p => p.name.toLowerCase() === nameInput && p.date === formattedDate);
+  
+
+  if (person) {
+    inputContainer=document.getElementById('inputContainer');
+    messageElement=document.getElementById('message');
+    msghdr=document.getElementById('msghdr');
+    msghdr.textContent = `🎉 Happy ${person.occasion}, ${person.name}! 🎉`;
+      messageElement.style.display = 'block';
+      inputContainer.style.display="none";
+  } else {
+    inputContainer=document.getElementById('inputContainer');
+    messageElement=document.getElementById('message');
+    msghdr=document.getElementById('msghdr');
+    messageElement.textContent = 'No special found for Today.';
+    inputContainer.style.display = 'none';
+      messageElement.style.display='block';
+  }
+}
+
+  </script>
+
+</body>
+</html>
